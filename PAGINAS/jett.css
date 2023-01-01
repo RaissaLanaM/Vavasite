@@ -1,0 +1,155 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+
+
+body {
+    
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt881609ccc5207499/60b1901d3aac347374b5d9d1/VALORANT_YR1_ArticleHero_16_9.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    justify-content: center;
+    margin-top: 170px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 65vh;
+    display: inline-flex;
+    align-items: stretch;
+    overflow: hidden;
+   
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+  
+    border-radius: 18px;
+    background: #2e2d2c;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  .card-image1 {
+    grid-area: image;
+    background: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltce7928301a67a33a/5eaf861103f6e72ff388cc20/TX_Jett_Q.png");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    
+  }
+  
+  .card-image2 {
+    grid-area: image;
+    background: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta0beeaa4a7e1ed78/5eaf8611b8a6356e4ddc1013/TX_Jett_E.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+  .card-image3 {
+    grid-area: image;
+    background: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf137993847c71770/5eaf8611d4b10d15d3e8db4e/TX_Jett_C.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+  .card-image4 {
+    grid-area: image;
+    background: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb3e956f9fb96318e/5eaf86112b79652f27c32a06/TX_Jett_X.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-text .date {
+    color: #1ab3b3;
+    font-size:13px;
+  }
+  .card-text p {
+    color: rgb(122, 153, 156);
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #1ab3b3;
+  }
+  .card-stats .stat {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  .card-stats .border {
+    border-left: 1px solid  #c1e0e0;
+    border-right: 1px solid  #c1e0e0;
+  }
+  .card-stats .value{
+    font-size:22px;
+    font-weight: 500;
+  }
+  .card-stats .value sup{
+    font-size:12px;
+  }
+  .card-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  
+  /*card2*/
+  .card-image.card2 {
+    background: url("img2.jpg");
+    background-size: cover;
+  }
+  .card-text.card2 .date {
+    color: rgb(255, 77, 7);
+  }
+  .card-stats.card2 .border {
+    border-left: 1px solid rgb(185, 67, 20);
+    border-right: 1px solid rgb(185, 67, 20);
+  }
+  .card-stats.card2 {
+    background: rgb(255, 77, 7);
+  }
+  /*card3*/
+  .card-image.card3 {
+    background: url("img3.jpg");
+    background-size: cover;
+  }
+  .card-text.card3 .date {
+    color: rgb(0, 189, 63);
+  }
+  .card-stats.card3 .border {
+    border-left: 1px solid rgb(14, 122, 50);
+    border-right: 1px solid rgb(14, 122, 50);
+  }
+  .card-stats.card3 {
+    background: rgb(0, 189, 63);
+  }
+  
